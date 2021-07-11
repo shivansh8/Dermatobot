@@ -5,7 +5,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-EXPOSE 5002
+EXPOSE 5003
 COPY . .
 RUN ls
 CMD ["python3", "treatement.py"]
