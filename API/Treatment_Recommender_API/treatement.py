@@ -15,39 +15,8 @@ import flask
 from flask import Flask,jsonify
 import pandas as pd
 import ast
-import warnings, re,math, datetime, time
-start_time = time.time()
-from datetime import timedelta
-warnings.filterwarnings("ignore")
-import math
-import pandas as pd
-import csv, io
-import numpy as np
-import scipy
-import matplotlib
-import matplotlib.pyplot as plt
-import nltk, string
-from nltk.corpus import stopwords
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn import preprocessing
-from sklearn.feature_extraction.text import CountVectorizer
-from nltk.stem.snowball import SnowballStemmer
-from sklearn.cluster import KMeans
-from sklearn.metrics import adjusted_rand_score
-from geopy import geocoders
-gn = geocoders.GeoNames(username = "idselection")
-import shapely
-from shapely.geometry import Point, LineString, Polygon
 from flask import request
-import pandas as pd
-import tensorflow as tf
-import tensorflow_hub as hub
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-import pandas as pd
-import scipy.spatial
+
 
 app = flask.Flask(__name__)
 CORS(app)
