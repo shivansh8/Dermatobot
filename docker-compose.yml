@@ -37,5 +37,21 @@ services:
                     devices:
                     - capabilities: [gpu]
 
+
+    treatment_recommender_api:
+        build: ./API/Treatment_Recommender_API
+        ports:
+            - "5003:5003"
+        volumes:
+            - '.:/treatment_recommender_api'
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                    - capabilities: [gpu]
+
+   
+
+
    
 
